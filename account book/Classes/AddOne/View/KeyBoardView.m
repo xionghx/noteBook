@@ -9,7 +9,7 @@
 #import "KeyBoardView.h"
 #define PICKER_WIDTH  80
 #define PICKER_HIGHT  80
-//#define asdfaasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddsdf    20
+//#define asdfasdf    20
 
 @interface KeyBoardView ()<UIPickerViewDataSource,UIPickerViewDelegate>
 //@property(nonatomic,assign)CGFloat amount;
