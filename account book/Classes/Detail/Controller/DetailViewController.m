@@ -93,7 +93,7 @@
         return cell;
     }
     static NSString *reUseMark = @"DetailPageCell";
-    DetailCell * cell = [tableView dequeueReusableCellWithIdentifier:reUseMark];
+    DetailCell * cell = [tableView dequeueReusableCellWithIdentifier:reUseMark forIndexPath:indexPath];
     if (cell == nil) {
         cell = [[DetailCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reUseMark];
     }

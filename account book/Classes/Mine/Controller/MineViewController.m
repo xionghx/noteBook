@@ -7,9 +7,10 @@
 //
 
 #import "MineViewController.h"
-
+#import "AccountManagePage.h"
+#import <AVOSCloud/AVOSCloud.h>
 @interface MineViewController ()
-
+@property(nonatomic,strong)UIButton * LoginButton;
 @end
 
 @implementation MineViewController
@@ -17,10 +18,138 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
-    [self learnSandbox];
+    [self.view addSubview:self.LoginButton];
+    
+//    [self learnSandbox];
   
 
 }
+
+#pragma mark getter
+-(UIButton *)LoginButton
+{
+    if (_LoginButton == nil) {
+        _LoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _LoginButton.frame = CGRectMake(0, 100, SCREEN_W, 100);
+        _LoginButton.backgroundColor = [UIColor redColor];
+        [_LoginButton addTarget:self action:@selector(LoginButtonTaped:) forControlEvents:UIControlEventTouchUpInside];
+        
+    }
+    return _LoginButton;
+}
+
+
+
+-(void)LoginButtonTaped:(UIButton *)sender
+{
+    AccountManagePage *newPage = [AccountManagePage new];
+    newPage.navigationController.navigationBarHidden = NO;
+    [self.navigationController pushViewController:newPage animated:YES];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - (void)learnSandbox {
     //获取沙盒路径
     //1.主路径

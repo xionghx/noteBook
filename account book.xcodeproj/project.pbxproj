@@ -27,6 +27,13 @@
 		035D16411D1283CC00BEBD97 /* DetailTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 035D16401D1283CC00BEBD97 /* DetailTable.m */; };
 		035D16441D12840000BEBD97 /* DetailScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 035D16431D12840000BEBD97 /* DetailScroll.m */; };
 		035D16471D129C3500BEBD97 /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035D16461D129C3500BEBD97 /* DetailCell.m */; };
+		0381F0A41D265E7700324AE5 /* InputTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381F0A31D265E7700324AE5 /* InputTextViewController.m */; };
+		0381F0A71D267FF700324AE5 /* RegistPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381F0A61D267FF700324AE5 /* RegistPage.m */; };
+		0381F0AA1D26805000324AE5 /* RegistPageSecondStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381F0A91D26805000324AE5 /* RegistPageSecondStep.m */; };
+		0381F0AD1D26806500324AE5 /* RegistPageThirdStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381F0AC1D26806500324AE5 /* RegistPageThirdStep.m */; };
+		0381F0B01D2682A900324AE5 /* AccountManagePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381F0AF1D2682A900324AE5 /* AccountManagePage.m */; };
+		0381F0B31D26878F00324AE5 /* LoginPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381F0B21D26878F00324AE5 /* LoginPage.m */; };
+		0381F0B61D26B5BB00324AE5 /* XAlertViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381F0B51D26B5BB00324AE5 /* XAlertViewHelper.m */; };
 		039A0DF01D196050001FE4F5 /* account book copy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039A0DEF1D196050001FE4F5 /* account book copy-Info.plist */; };
 		03A3FBB91D103A480063A9EA /* AccountData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03A3FBB71D103A480063A9EA /* AccountData.xcdatamodeld */; };
 		03A70E021D1A21BC007010B6 /* DescribePlist+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A70DFF1D1A21BC007010B6 /* DescribePlist+CoreDataProperties.m */; };
@@ -100,6 +107,20 @@
 		035D16431D12840000BEBD97 /* DetailScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailScroll.m; sourceTree = "<group>"; };
 		035D16451D129C3500BEBD97 /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
 		035D16461D129C3500BEBD97 /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		0381F0A21D265E7700324AE5 /* InputTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTextViewController.h; sourceTree = "<group>"; };
+		0381F0A31D265E7700324AE5 /* InputTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTextViewController.m; sourceTree = "<group>"; };
+		0381F0A51D267FF700324AE5 /* RegistPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistPage.h; sourceTree = "<group>"; };
+		0381F0A61D267FF700324AE5 /* RegistPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistPage.m; sourceTree = "<group>"; };
+		0381F0A81D26805000324AE5 /* RegistPageSecondStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistPageSecondStep.h; sourceTree = "<group>"; };
+		0381F0A91D26805000324AE5 /* RegistPageSecondStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistPageSecondStep.m; sourceTree = "<group>"; };
+		0381F0AB1D26806500324AE5 /* RegistPageThirdStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistPageThirdStep.h; sourceTree = "<group>"; };
+		0381F0AC1D26806500324AE5 /* RegistPageThirdStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistPageThirdStep.m; sourceTree = "<group>"; };
+		0381F0AE1D2682A900324AE5 /* AccountManagePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManagePage.h; sourceTree = "<group>"; };
+		0381F0AF1D2682A900324AE5 /* AccountManagePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManagePage.m; sourceTree = "<group>"; };
+		0381F0B11D26878F00324AE5 /* LoginPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPage.h; sourceTree = "<group>"; };
+		0381F0B21D26878F00324AE5 /* LoginPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPage.m; sourceTree = "<group>"; };
+		0381F0B41D26B5BB00324AE5 /* XAlertViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAlertViewHelper.h; sourceTree = "<group>"; };
+		0381F0B51D26B5BB00324AE5 /* XAlertViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAlertViewHelper.m; sourceTree = "<group>"; };
 		039A0DEF1D196050001FE4F5 /* account book copy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "account book copy-Info.plist"; sourceTree = "<group>"; };
 		03A3FBB81D103A480063A9EA /* AccountData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccountData.xcdatamodel; sourceTree = "<group>"; };
 		03A70DFE1D1A21BC007010B6 /* DescribePlist+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DescribePlist+CoreDataProperties.h"; path = "../../../DescribePlist+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -377,8 +398,22 @@
 		0319E5D61D0FE748000A79E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0381F0B41D26B5BB00324AE5 /* XAlertViewHelper.h */,
+				0381F0B51D26B5BB00324AE5 /* XAlertViewHelper.m */,
 				03E065181D10204600030F17 /* MineViewController.h */,
 				03E065191D10204600030F17 /* MineViewController.m */,
+				0381F0B11D26878F00324AE5 /* LoginPage.h */,
+				0381F0B21D26878F00324AE5 /* LoginPage.m */,
+				0381F0AE1D2682A900324AE5 /* AccountManagePage.h */,
+				0381F0AF1D2682A900324AE5 /* AccountManagePage.m */,
+				0381F0A51D267FF700324AE5 /* RegistPage.h */,
+				0381F0A61D267FF700324AE5 /* RegistPage.m */,
+				0381F0A81D26805000324AE5 /* RegistPageSecondStep.h */,
+				0381F0A91D26805000324AE5 /* RegistPageSecondStep.m */,
+				0381F0AB1D26806500324AE5 /* RegistPageThirdStep.h */,
+				0381F0AC1D26806500324AE5 /* RegistPageThirdStep.m */,
+				0381F0A21D265E7700324AE5 /* InputTextViewController.h */,
+				0381F0A31D265E7700324AE5 /* InputTextViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -618,6 +653,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03A70E031D1A21BC007010B6 /* DescribePlist.m in Sources */,
+				0381F0B31D26878F00324AE5 /* LoginPage.m in Sources */,
 				03E065291D1021C800030F17 /* XNavigationController.m in Sources */,
 				03FB470D1D1A4AF2005585DB /* IncomeDescribe.m in Sources */,
 				035D16441D12840000BEBD97 /* DetailScroll.m in Sources */,
@@ -640,20 +676,26 @@
 				03E065231D10209000030F17 /* AddOneViewController.m in Sources */,
 				03E0651A1D10204600030F17 /* MineViewController.m in Sources */,
 				0319E5AF1D0FE362000A79E3 /* AppDelegate.m in Sources */,
+				0381F0B61D26B5BB00324AE5 /* XAlertViewHelper.m in Sources */,
 				0319E5AC1D0FE362000A79E3 /* main.m in Sources */,
 				0305BD521D14E57B00FD242C /* CostCollection.m in Sources */,
+				0381F0A71D267FF700324AE5 /* RegistPage.m in Sources */,
 				03E065201D10208200030F17 /* DetailViewController.m in Sources */,
 				0305BD551D14E59D00FD242C /* TransferCollection.m in Sources */,
 				0319E5F91D0FED6E000A79E3 /* UIView+SetSize.m in Sources */,
 				03A70E021D1A21BC007010B6 /* DescribePlist+CoreDataProperties.m in Sources */,
 				03E065261D1020A100030F17 /* GraphViewController.m in Sources */,
 				03BC14491D15A08E00EE131C /* NSObject+FileWithBundle.m in Sources */,
+				0381F0A41D265E7700324AE5 /* InputTextViewController.m in Sources */,
 				0319E5EC1D0FE8A4000A79E3 /* MainViewController.m in Sources */,
 				03E0651D1D10207100030F17 /* WalletViewController.m in Sources */,
+				0381F0AD1D26806500324AE5 /* RegistPageThirdStep.m in Sources */,
 				03FB470A1D1A4AF2005585DB /* CostDescribe+CoreDataProperties.m in Sources */,
 				033978A61D19B5F100E9092A /* CoreDataManager.m in Sources */,
 				03FB470B1D1A4AF2005585DB /* CostDescribe.m in Sources */,
 				03019F691D1396CD0009D5B4 /* ShareData.m in Sources */,
+				0381F0AA1D26805000324AE5 /* RegistPageSecondStep.m in Sources */,
+				0381F0B01D2682A900324AE5 /* AccountManagePage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
