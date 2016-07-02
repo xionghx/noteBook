@@ -8,6 +8,7 @@
 
 #import "AccountManagePage.h"
 #import "RegistPage.h"
+#import "LoginPage.h"
 
 @interface AccountManagePage ()
 @property(nonatomic,strong)UITextField *accountField;
@@ -58,6 +59,8 @@
     if (_accountField == nil) {
         _accountField =[[UITextField alloc]initWithFrame:CGRectMake(0, 200, SCREEN_W, 80)];
         _accountField.backgroundColor = [UIColor redColor];
+        _accountField.placeholder = @"请输入账号";
+        [_accountField addTarget:self action:@selector(beginEdit) forControlEvents:UIControlEventEditingDidBegin];
     }
     return _accountField;
 }
@@ -66,8 +69,17 @@
     if (_passwrodField == nil) {
         _passwrodField =[[UITextField alloc]initWithFrame:CGRectMake(0, 300, SCREEN_W, 80)];
         _passwrodField.backgroundColor = [UIColor redColor];
+        _passwrodField.placeholder =@"请输入密码";
+        [_passwrodField addTarget:self action:@selector(beginEdit) forControlEvents:UIControlEventEditingDidBegin];
+
     }
     return _passwrodField;
+}
+
+-(void)beginEdit
+{
+    LoginPage *newPage = [[LoginPage alloc]init];
+    [self presentViewController:newPage animated:YES completion:nil];
 }
 
 -(void)getBackPassWord

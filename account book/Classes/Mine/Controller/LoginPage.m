@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.loginButton];
     [self.view addSubview:self.accountField];
     [self.view addSubview:self.passwrodField];
@@ -29,6 +30,7 @@
     if (_loginButton == nil) {
         _loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _loginButton.frame = CGRectMake(0.5*(SCREEN_W-120), 500, 120, 50);
+        _loginButton.backgroundColor = [UIColor redColor];
     }
     return _loginButton;
 }

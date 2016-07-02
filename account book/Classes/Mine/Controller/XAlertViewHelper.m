@@ -23,8 +23,8 @@
 
 @implementation XAlertViewHelper
 
-- (void)showAlertViewWithMessage:(NSString *)message type:(UIAlertViewStyle)style block:(XAlertViewHelperFinishBlock)block {
-    self.finishBlock = block;
++(void)showAlertViewWithMessage:(NSString * _Nonnull)message target:(id _Nonnull)target block:(XAlertViewHelperFinishBlock _Nonnull)block{
+ //    aHelper.finishBlock = block;
 //    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
 //    self.alertViewStyle = style;
 //    alertView.alertViewStyle = style;
@@ -34,39 +34,48 @@
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
    
     UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        self.result = YES;
-        self.finishBlock(self.result, self.inputText);
-        self.inputText = nil;
-        self.finishBlock = nil;
-        self.result = NO;
+//        aHelper.result = YES;
+//        aHelper.finishBlock(aHelper.result, aHelper.inputText);
+//        aHelper.inputText = alertController.textFields[0].text;
+//        aHelper.finishBlock = nil;
+//        aHelper.result = NO;
+        
+        block(alertController.textFields[0].text);
+        
     }];
     [alertController addAction:sureAction];
+    
+    
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        self.inputText = nil;
-        self.finishBlock = nil;
-        self.result = NO;
+//        aHelper.inputText = nil;
+//        aHelper.finishBlock = nil;
+//        aHelper.result = NO;
     }];
     [alertController addAction:cancelAction];
-    
-    
-    [self presentViewController:alertController animated:YES completion:^{
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
     }];
-
-}
-
-- (void)showInputAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block {
-    [self showAlertViewWithMessage:message type:UIAlertViewStylePlainTextInput block:block];
-}
-
-- (void)showConfirmAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block {
-    [self showAlertViewWithMessage:message type:UIAlertViewStyleDefault block:block];
-}
-
-- (void)showAlertViewWithMessage:(NSString *)message {
-//    [[[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil] show];
+        [target presentViewController:alertController animated:YES completion:^{
+        
+    }];
     
-    [self showAlertViewWithMessage:message type:UIAlertViewStyleDefault block:nil];
+//    [self presentViewController:alertController animated:YES completion:^{
+//    }];
+
 }
+
+//- (void)showInputAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block {
+//    [self showAlertViewWithMessage:message type:UIAlertViewStylePlainTextInput block:block];
+//}
+//
+//- (void)showConfirmAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block {
+//    [self showAlertViewWithMessage:message type:UIAlertViewStyleDefault block:block];
+//}
+//
+//- (void)showAlertViewWithMessage:(NSString *)message {
+////    [[[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil] show];
+//    
+//    [self showAlertViewWithMessage:message type:UIAlertViewStyleDefault block:nil];
+//}
 
 //- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
 //    if (buttonIndex == 1) {

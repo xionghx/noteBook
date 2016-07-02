@@ -8,17 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^XAlertViewHelperFinishBlock)(BOOL confirm, NSString *text);
+typedef void(^XAlertViewHelperFinishBlock)(NSString * _Nonnull text);
 
 
 
-@interface XAlertViewHelper : UIViewController
+@interface XAlertViewHelper : NSObject
 
-- (void)showInputAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block;
-
-- (void)showConfirmAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block;
-
-- (void)showAlertViewWithMessage:(NSString *)message;
++(void)showAlertViewWithMessage:(NSString * _Nonnull)message target:(id _Nonnull)target block:(XAlertViewHelperFinishBlock _Nonnull)block;
+//- (void)showInputAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block;
+//
+//- (void)showConfirmAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block;
+//
+//- (void)showAlertViewWithMessage:(NSString *)message;
 
 
 @end

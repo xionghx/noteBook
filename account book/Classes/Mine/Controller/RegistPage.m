@@ -50,20 +50,17 @@
 {
 //    NSLog(@"%@" ,[AVOSCloud getApplicationId]);
 //    NSLog(@"%@",[AVOSCloud getClientKey]);
-//    [AVOSCloud requestSmsCodeWithPhoneNumber:@"13106085483" callback:^(BOOL succeeded, NSError *error) {
-//        if (succeeded) {
+    [AVOSCloud requestSmsCodeWithPhoneNumber:self.phoneNumberTextField.text callback:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
             RegistPageSecondStep * newPage = [[RegistPageSecondStep alloc]init];
-            newPage.phoneNumeber = @"";
+            newPage.phoneNumeber = self.phoneNumberTextField.text;
             [self.navigationController pushViewController:newPage animated:YES];
-//        }else{
-//            NSLog(@"%@",error);
-//        }
-//    }];
-//    
-//    
-//    [AVUser signUpOrLoginWithMobilePhoneNumberInBackground:@"13577778888" smsCode:@"123456" block:^(AVUser *user, NSError *error) {
-//        // 如果 error 为空就可以表示登录成功了，并且 user 是一个全新的用户
-//    }];
-//    
+        }else{
+            NSLog(@"%@",error);
+        }
+    }];
+    
+    
+     
 }
 @end
